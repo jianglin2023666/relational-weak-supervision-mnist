@@ -1,0 +1,11 @@
+{
+  "experiment_name": "weakly_supervised_50k",
+  "train_size": "50k",
+  "epochs": 5,
+  "seeds": [42, 43, 44, 45, 46],
+  "batch_size": 128,
+  "learning_rate": 0.001,
+  "weight_decay": 0.0001,
+  "num_workers": 0,
+  "deterministic": true
+}

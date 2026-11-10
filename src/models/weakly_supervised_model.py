@@ -65,6 +65,12 @@ class WeaklySupervisedModel(nn.Module):
         
         prob_first_greater = (joint_probs * mask_greater).sum(dim=(1, 2))
 
+        # The sum is mathematically in [0, 1], but CUDA floating-point
+        # accumulation can produce values such as 1.0000001. BCELoss rejects
+        # those values, so keep the probability inside a stable open interval.
+        eps = torch.finfo(prob_first_greater.dtype).eps
+        prob_first_greater = prob_first_greater.clamp(min=eps, max=1.0 - eps)
+
         return prob_first_greater.unsqueeze(1)
     
     def predict(self, x):

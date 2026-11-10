@@ -1,6 +1,5 @@
 import torch
 import torch.nn as nn
-import torch.nn.functional as F
 import os
 
 from src.models.base_model import BaseModel
@@ -11,19 +10,15 @@ class SiameseModel(nn.Module):
     Siamese model for learning from pairwise comparisons.
     """
     
-    def __init__(self, num_classes=10, embedding_dim=128, hidden_dim=64, 
-                 dropout=0.2, shared_weights=True):
+    def __init__(self, embedding_dim=128, hidden_dim=64, dropout=0.2):
         """
         Args:
-            num_classes (int, optional): Number of classes.
             embedding_dim (int, optional): Dimension of the embedding space.
             hidden_dim (int, optional): Dimension of the hidden layers.
             dropout (float, optional): Dropout rate.
-            shared_weights (bool, optional): Whether to share weights between the two branches.
         """
-        super(SiameseModel, self).__init__()
+        super().__init__()
         
-        self.shared_weights = shared_weights
         self.embedding_dim = embedding_dim
         
         # Feature extractors
@@ -46,16 +41,18 @@ class SiameseModel(nn.Module):
             x: tensor of shape (batch_size, 2, 1, 28, 28). The 2 is for the two images in the pair.
             
         Returns:
-            tuple: Depending on the inputs:
-                - If x2 is None: (logits, embedding1) - For classification
-                - If x2 is not None: (relation_score, (embedding1, embedding2)) - For relation prediction
+            torch.Tensor: P(first image > second image), shape (batch_size, 1).
         """
-        x1, x2 = x[:, 0, :, :, :], x[:, 1, :, :, :]
-        # Squeeze dimension to get (batch_size, 1, 28, 28)
-        x1 = x1.squeeze(2)
-        x2 = x2.squeeze(2)
+        if x.ndim != 5 or x.shape[1] != 2:
+            raise ValueError(
+                "Expected pair input with shape [batch, 2, 1, 28, 28], "
+                f"but received {tuple(x.shape)}"
+            )
 
-        # Get embeddings for the first input
+        x1, x2 = x[:, 0, :, :, :], x[:, 1, :, :, :]
+
+        # Both images pass through the same feature extractor, so the two
+        # Siamese branches always share weights.
         embedding1 = self.feature_extractor(x1)
         embedding2 = self.feature_extractor(x2)
         
@@ -76,8 +73,13 @@ class SiameseModel(nn.Module):
         Returns:
             torch.Tensor: Relation scores of shape (batch_size, 1).
         """
-        relation_score = self.forward(x1, x2)
-        return relation_score
+        if x1.shape != x2.shape:
+            raise ValueError(
+                f"x1 and x2 must have the same shape, got {tuple(x1.shape)} "
+                f"and {tuple(x2.shape)}"
+            )
+        image_pairs = torch.stack((x1, x2), dim=1)
+        return self.forward(image_pairs)
     
     def extract_embedding(self, x):
         """
@@ -89,10 +91,16 @@ class SiameseModel(nn.Module):
         """
         Save the base model.
         """
+        os.makedirs(save_dir, exist_ok=True)
         torch.save(self.feature_extractor.state_dict(), os.path.join(save_dir, 'base_model.pth'))
 
-    def load_base_model(self, save_dir):
+    def load_base_model(self, save_dir, map_location=None):
         """
         Load the base model.
         """
-        self.feature_extractor.load_state_dict(torch.load(os.path.join(save_dir, 'base_model.pth')))
+        state_dict = torch.load(
+            os.path.join(save_dir, 'base_model.pth'),
+            map_location=map_location,
+            weights_only=True,
+        )
+        self.feature_extractor.load_state_dict(state_dict)

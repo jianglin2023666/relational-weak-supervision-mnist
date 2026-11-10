@@ -1,11 +1,12 @@
-import os
-import torch
-import numpy as np
-from torch.utils.data import Dataset, DataLoader
-from torchvision import datasets, transforms
-import random
+from pathlib import Path
 
-from src.utils.constants import HOME_DIR, DATA_DIR, MNIST_DIR, SUPERVISED_DIR, WEAKLY_SUPERVISED_DIR
+import torch
+from torch.utils.data import Dataset
+
+from src.utils.constants import SUPERVISED_DIR, WEAKLY_SUPERVISED_DIR
+
+
+SUPPORTED_RELATION_TRAIN_SIZES = {"50k", "500k"}
 
 
 class SupervisedMNISTDataset(Dataset):
@@ -22,19 +23,16 @@ class SupervisedMNISTDataset(Dataset):
         
         # Load the appropriate data split
         if split == 'train':
-            self.data = torch.load(f"{SUPERVISED_DIR}/x_train.pt")
-            self.labels = torch.load(f"{SUPERVISED_DIR}/y_train.pt")
+            self.data = torch.load(Path(SUPERVISED_DIR) / "x_train.pt", weights_only=True)
+            self.labels = torch.load(Path(SUPERVISED_DIR) / "y_train.pt", weights_only=True)
         elif split == 'val':
-            self.data = torch.load(f"{SUPERVISED_DIR}/x_val.pt")
-            self.labels = torch.load(f"{SUPERVISED_DIR}/y_val.pt")
+            self.data = torch.load(Path(SUPERVISED_DIR) / "x_val.pt", weights_only=True)
+            self.labels = torch.load(Path(SUPERVISED_DIR) / "y_val.pt", weights_only=True)
         elif split == 'test':
-            self.data = torch.load(f"{SUPERVISED_DIR}/x_test.pt")
-            self.labels = torch.load(f"{SUPERVISED_DIR}/y_test.pt")
+            self.data = torch.load(Path(SUPERVISED_DIR) / "x_test.pt", weights_only=True)
+            self.labels = torch.load(Path(SUPERVISED_DIR) / "y_test.pt", weights_only=True)
         else:
             raise ValueError(f"Invalid split: {split}. Must be one of 'train', 'val', or 'test'")
-        
-        # Convert data to float and normalize to [0, 1]
-        self.data = self.data.float() / 255.0
         
         # Add channel dimension if not present
         if len(self.data.shape) == 3:
@@ -46,7 +44,7 @@ class SupervisedMNISTDataset(Dataset):
     
     def __getitem__(self, idx):
         """Get a single sample from the dataset."""
-        img = self.data[idx]
+        img = self.data[idx].float() / 255.0
         label = self.labels[idx]
         
         if self.transform:
@@ -62,7 +60,7 @@ class WeaklySupervisedMNISTDataset(Dataset):
         
         Args:
             split (str): One of 'train', 'val', or 'test'
-            size (str): For training split, one of '50k', '500k', or '5000k'. Ignored for val/test.
+            size (str): For training split, one of '50k' or '500k'. Ignored for val/test.
             transform (callable, optional): Optional transform to be applied on a sample
         """
         self.split = split
@@ -71,22 +69,28 @@ class WeaklySupervisedMNISTDataset(Dataset):
         
         # Load the appropriate data split
         if split == 'train':
-            if size not in ['50k', '500k', '5000k']:
-                raise ValueError(f"Invalid size: {size}. Must be one of '50k', '500k', or '5000k'")
-            self.data = torch.load(f"{WEAKLY_SUPERVISED_DIR}/x_train_{size}.pt")
-            self.labels = torch.load(f"{WEAKLY_SUPERVISED_DIR}/y_train_{size}.pt")
+            if size not in SUPPORTED_RELATION_TRAIN_SIZES:
+                choices = ", ".join(sorted(SUPPORTED_RELATION_TRAIN_SIZES))
+                raise ValueError(f"Invalid size: {size}. Choose from: {choices}")
+            x_path = Path(WEAKLY_SUPERVISED_DIR) / f"x_train_{size}.pt"
+            y_path = Path(WEAKLY_SUPERVISED_DIR) / f"y_train_{size}.pt"
         elif split == 'val':
-            self.data = torch.load(f"{WEAKLY_SUPERVISED_DIR}/x_val.pt")
-            self.labels = torch.load(f"{WEAKLY_SUPERVISED_DIR}/y_val.pt")
+            x_path = Path(WEAKLY_SUPERVISED_DIR) / "x_val.pt"
+            y_path = Path(WEAKLY_SUPERVISED_DIR) / "y_val.pt"
         elif split == 'test':
-            self.data = torch.load(f"{WEAKLY_SUPERVISED_DIR}/x_test.pt")
-            self.labels = torch.load(f"{WEAKLY_SUPERVISED_DIR}/y_test.pt")
+            x_path = Path(WEAKLY_SUPERVISED_DIR) / "x_test.pt"
+            y_path = Path(WEAKLY_SUPERVISED_DIR) / "y_test.pt"
         else:
             raise ValueError(f"Invalid split: {split}. Must be one of 'train', 'val', or 'test'")
         
-        # Convert data to float and normalize to [0, 1]
-        self.data = self.data.float() / 255.0
-        
+        if not x_path.exists() or not y_path.exists():
+            raise FileNotFoundError(
+                f"Missing relational dataset files: {x_path}, {y_path}. "
+                "Generate them with data.mnist.download_MNIST."
+            )
+        self.data = torch.load(x_path, weights_only=True)
+        self.labels = torch.load(y_path, weights_only=True)
+
         # Add channel dimension if not present
         if len(self.data.shape) == 4:  # (N, 2, H, W)
             self.data = self.data.unsqueeze(2)  # (N, 2, 1, H, W)
@@ -97,7 +101,7 @@ class WeaklySupervisedMNISTDataset(Dataset):
     
     def __getitem__(self, idx):
         """Get a single sample from the dataset."""
-        img_pair = self.data[idx]  # Shape: (2, 1, H, W)
+        img_pair = self.data[idx].float() / 255.0  # Shape: (2, 1, H, W)
         label = self.labels[idx]    # Shape: (1,)
         
         if self.transform:

@@ -1,0 +1,14 @@
+{
+  "experiment_name": "joint_relational_50k_1shot_lambda0.5",
+  "train_size": "50k",
+  "epochs": 5,
+  "seeds": [42, 43, 44, 45, 46],
+  "shots_per_class": 1,
+  "classification_weight": 0.5,
+  "relation_batch_size": 128,
+  "labelled_batch_size": 32,
+  "learning_rate": 0.001,
+  "weight_decay": 0.0001,
+  "num_workers": 0,
+  "deterministic": true
+}

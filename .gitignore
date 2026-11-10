@@ -4,7 +4,9 @@
 
 tables
 
-figures
+# Keep the figures directory, but ignore generated figures.
+figures/*
+!figures/.gitkeep
 
 # Ignore all __pycache__ folders in entire project, including subfolders
 __pycache__/
@@ -16,8 +18,9 @@ data/mnist/supervised/
 data/mnist/weakly_supervised/
 
 
-# Ignore training results
-training_results/
+# Keep the results directory, but ignore generated experiment outputs.
+training_results/*
+!training_results/.gitkeep
 
 
 # Ignore all DS_Store files

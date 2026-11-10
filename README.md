@@ -2,7 +2,9 @@
 
 任务：MNIST手写数字识别
 
-本项目copy自https://github.com/junhakunha/cs231n_final_project，鸣谢不知名的Stanford大佬，由liushy99@sjtu.edu.cn在此基础上进行微不足道的改编。保留所有右边
+本项目copy自https://github.com/junhakunha/cs231n_final_project
+
+鸣谢不知名的Stanford大佬，由liushy99@sjtu.edu.cn在此基础上进行微不足道的改编。保留所有右边
 
 **研究背景：**
 

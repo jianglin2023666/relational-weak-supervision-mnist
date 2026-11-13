@@ -1,0 +1,6 @@
+﻿seed,best_epoch,best_val_digit_accuracy,digit_test_loss,digit_test_accuracy,training_time_seconds,checkpoint_path
+42,4,98.83,0.03750277889193967,98.85,73.464667799999,training_results/supervised/supervised_50k_20261110_165603/seed_42/best_supervised_model.pth
+43,4,98.76,0.034901161124184725,98.78,61.9261325999978,training_results/supervised/supervised_50k_20261110_165603/seed_43/best_supervised_model.pth
+44,4,98.97,0.029810101640690118,99.07,67.0456989000013,training_results/supervised/supervised_50k_20261110_165603/seed_44/best_supervised_model.pth
+45,5,99.0,0.02635783475320786,99.14,75.72931339999923,training_results/supervised/supervised_50k_20261110_165603/seed_45/best_supervised_model.pth
+46,5,99.11,0.029298247865622396,99.08,57.69892190000246,training_results/supervised/supervised_50k_20261110_165603/seed_46/best_supervised_model.pth

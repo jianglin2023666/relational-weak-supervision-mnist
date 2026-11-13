@@ -1,0 +1,9 @@
+{
+  "device": "cpu",
+  "torch_version": "2.7.0+cpu",
+  "cuda_version": null,
+  "gpu_name": null,
+  "config_path": "configs/supervised.json",
+  "checkpoint_selection": "digit_validation_accuracy",
+  "supervision": "full_digit_labels"
+}

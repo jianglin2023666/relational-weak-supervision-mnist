@@ -1,0 +1,12 @@
+{
+  "status": "passed",
+  "seeds": 5,
+  "epochs_per_seed": 5,
+  "test_samples_per_seed": 10000,
+  "embedding_samples": 2000,
+  "embedding_samples_per_class": 200,
+  "mean_accuracy_percent": 98.984,
+  "sample_std_percent": 0.15852444606432137,
+  "verified_file_hashes": 48,
+  "zip_integrity": "passed"
+}

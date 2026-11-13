@@ -1,0 +1,7 @@
+{
+  "source_csv": "D:/job/relational-weak-supervision-mnist/training_results/supervised/supervised_50k_20261110_165603/seed_42/digit_confusion_matrix.csv",
+  "num_samples": 10000,
+  "num_correct": 9885,
+  "accuracy": 0.9885,
+  "accuracy_percent": 98.85000000000001
+}

@@ -1,0 +1,25 @@
+{
+  "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+  "torch": "2.7.0+cpu",
+  "threads": 4,
+  "experiment": "training_results/supervised/supervised_50k_20261110_165603",
+  "commit": "16dcacf7d0b71797870d765607b9489cecc8e8b7",
+  "config": {
+    "experiment_name": "supervised_50k",
+    "epochs": 5,
+    "seeds": [
+      42,
+      43,
+      44,
+      45,
+      46
+    ],
+    "batch_size": 128,
+    "learning_rate": 0.001,
+    "weight_decay": 0.0001,
+    "num_workers": 0,
+    "deterministic": true
+  },
+  "embedding_seed": 42,
+  "embedding_samples_per_class": 200
+}

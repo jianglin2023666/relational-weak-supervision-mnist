@@ -1,0 +1,38 @@
+{
+  "num_runs": 5,
+  "metadata": {
+    "device": "cpu",
+    "torch_version": "2.7.0+cpu",
+    "cuda_version": null,
+    "gpu_name": null,
+    "config_path": "configs/supervised.json",
+    "checkpoint_selection": "digit_validation_accuracy",
+    "supervision": "full_digit_labels"
+  },
+  "metrics": {
+    "best_val_digit_accuracy": {
+      "mean": 98.934,
+      "std": 0.13939153489362105,
+      "min": 98.76,
+      "max": 99.11
+    },
+    "digit_test_loss": {
+      "mean": 0.03157402485512896,
+      "std": 0.004519933223335524,
+      "min": 0.02635783475320786,
+      "max": 0.03750277889193967
+    },
+    "digit_test_accuracy": {
+      "mean": 98.984,
+      "std": 0.15852444606432137,
+      "min": 98.78,
+      "max": 99.14
+    },
+    "training_time_seconds": {
+      "mean": 67.17294691999996,
+      "std": 7.584516491157872,
+      "min": 57.69892190000246,
+      "max": 75.72931339999923
+    }
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "source_csv": "training_results/siamese/siamese_50k_3shot_20261115_184207/seed_42/digit_confusion_matrix.csv",
+  "num_samples": 10000,
+  "num_correct": 9682,
+  "accuracy": 0.9682,
+  "accuracy_percent": 96.82
+}

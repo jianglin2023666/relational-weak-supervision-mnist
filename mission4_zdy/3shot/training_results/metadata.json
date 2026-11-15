@@ -1,0 +1,10 @@
+{
+  "device": "cpu",
+  "torch_version": "2.7.0+cpu",
+  "cuda_version": null,
+  "gpu_name": null,
+  "config_path": "/home/zhoudy/relational-weak-supervision-mnist/mission4/siamese_3shot.json",
+  "relation_checkpoint_selection": "relation_validation_accuracy",
+  "classifier_checkpoint_selection": "fixed_final_epoch",
+  "backbone_frozen_during_few_shot": true
+}

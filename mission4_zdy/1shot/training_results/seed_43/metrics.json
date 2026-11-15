@@ -1,0 +1,39 @@
+{
+  "seed": 43,
+  "best_epoch": 5,
+  "best_relation_epoch": 5,
+  "few_shot_epochs": 100,
+  "best_val_relation_accuracy": 99.025,
+  "relation_test_loss": 0.03118786075040698,
+  "relation_test_accuracy": 99.1,
+  "digit_test_accuracy": 96.84,
+  "digit_per_class_accuracy": {
+    "0": 98.87755102040816,
+    "1": 98.06167400881057,
+    "2": 97.28682170542636,
+    "3": 96.83168316831683,
+    "4": 96.33401221995926,
+    "5": 98.09417040358744,
+    "6": 97.39039665970772,
+    "7": 95.52529182879377,
+    "8": 95.17453798767967,
+    "9": 94.84638255698711
+  },
+  "training_time_seconds": 130.9232510039999,
+  "checkpoint_path": "training_results/siamese/siamese_50k_1shot_20261115_180722/seed_43/final_few_shot_classifier.pth",
+  "relation_checkpoint_path": "training_results/siamese/siamese_50k_1shot_20261115_180722/seed_43/best_siamese_relation_model.pth",
+  "shots_per_class": 1,
+  "selected_indices": [
+    37954,
+    43971,
+    11147,
+    20606,
+    21653,
+    7900,
+    8478,
+    46779,
+    45639,
+    44586
+  ],
+  "classification_update_steps": 100
+}

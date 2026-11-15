@@ -1,0 +1,119 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800">
+<rect width="100%" height="100%" fill="#f5f7fb"/>
+<g font-family="Arial, Noto Sans CJK SC, sans-serif">
+<text x="48.0" y="52.0" font-size="27" fill="#17243a" font-weight="bold" text-anchor="start">Siamese 50k · 1-shot 实验结果</text>
+<text x="48.0" y="78.0" font-size="14" fill="#64748b" font-weight="normal" text-anchor="start">5 个随机种子（42, 43, 44, 45, 46） · 虚线表示五次实验均值</text>
+<rect x="40" y="105" width="545" height="300" rx="14" fill="#ffffff" stroke="#e2e8f0"/>
+<text x="62.0" y="137.0" font-size="18" fill="#17243a" font-weight="bold" text-anchor="start">关系测试准确率（%）</text>
+<line x1="98" y1="357.0" x2="563" y2="357.0" stroke="#e8edf4"/>
+<text x="89.0" y="362.0" font-size="11" fill="#64748b" font-weight="normal" text-anchor="end">98.7%</text>
+<line x1="98" y1="311.5" x2="563" y2="311.5" stroke="#e8edf4"/>
+<text x="89.0" y="316.5" font-size="11" fill="#64748b" font-weight="normal" text-anchor="end">98.8%</text>
+<line x1="98" y1="266.0" x2="563" y2="266.0" stroke="#e8edf4"/>
+<text x="89.0" y="271.0" font-size="11" fill="#64748b" font-weight="normal" text-anchor="end">98.9%</text>
+<line x1="98" y1="220.5" x2="563" y2="220.5" stroke="#e8edf4"/>
+<text x="89.0" y="225.5" font-size="11" fill="#64748b" font-weight="normal" text-anchor="end">99.1%</text>
+<line x1="98" y1="175.0" x2="563" y2="175.0" stroke="#e8edf4"/>
+<text x="89.0" y="180.0" font-size="11" fill="#64748b" font-weight="normal" text-anchor="end">99.2%</text>
+<line x1="98.0" y1="357" x2="98.0" y2="290.8" stroke="#2563eb" stroke-opacity=".18" stroke-width="3"/>
+<circle cx="98.0" cy="290.8" r="7" fill="#2563eb" stroke="#fff" stroke-width="2"/>
+<text x="98.0" y="380.0" font-size="12" fill="#64748b" font-weight="normal" text-anchor="middle">42</text>
+<text x="98.0" y="278.8" font-size="11" fill="#2563eb" font-weight="bold" text-anchor="middle">98.85</text>
+<line x1="214.2" y1="357" x2="214.2" y2="208.1" stroke="#2563eb" stroke-opacity=".18" stroke-width="3"/>
+<circle cx="214.2" cy="208.1" r="7" fill="#2563eb" stroke="#fff" stroke-width="2"/>
+<text x="214.2" y="380.0" font-size="12" fill="#64748b" font-weight="normal" text-anchor="middle">43</text>
+<text x="214.2" y="196.1" font-size="11" fill="#2563eb" font-weight="bold" text-anchor="middle">99.10</text>
+<line x1="330.5" y1="357" x2="330.5" y2="307.4" stroke="#2563eb" stroke-opacity=".18" stroke-width="3"/>
+<circle cx="330.5" cy="307.4" r="7" fill="#2563eb" stroke="#fff" stroke-width="2"/>
+<text x="330.5" y="380.0" font-size="12" fill="#64748b" font-weight="normal" text-anchor="middle">44</text>
+<text x="330.5" y="295.4" font-size="11" fill="#2563eb" font-weight="bold" text-anchor="middle">98.80</text>
+<line x1="446.8" y1="357" x2="446.8" y2="257.7" stroke="#2563eb" stroke-opacity=".18" stroke-width="3"/>
+<circle cx="446.8" cy="257.7" r="7" fill="#2563eb" stroke="#fff" stroke-width="2"/>
+<text x="446.8" y="380.0" font-size="12" fill="#64748b" font-weight="normal" text-anchor="middle">45</text>
+<text x="446.8" y="245.7" font-size="11" fill="#2563eb" font-weight="bold" text-anchor="middle">98.95</text>
+<line x1="563.0" y1="357" x2="563.0" y2="236.2" stroke="#2563eb" stroke-opacity=".18" stroke-width="3"/>
+<circle cx="563.0" cy="236.2" r="7" fill="#2563eb" stroke="#fff" stroke-width="2"/>
+<text x="563.0" y="380.0" font-size="12" fill="#64748b" font-weight="normal" text-anchor="middle">46</text>
+<text x="563.0" y="224.2" font-size="11" fill="#2563eb" font-weight="bold" text-anchor="middle">99.02</text>
+<line x1="98" y1="260.0" x2="563" y2="260.0" stroke="#475569" stroke-dasharray="5 5"/>
+<text x="563.0" y="391.0" font-size="12" fill="#475569" font-weight="normal" text-anchor="end">均值 98.94%  ·  标准差 0.12</text>
+<rect x="615" y="105" width="545" height="300" rx="14" fill="#ffffff" stroke="#e2e8f0"/>
+<text x="637.0" y="137.0" font-size="18" fill="#17243a" font-weight="bold" text-anchor="start">1-shot 数字分类准确率（%）</text>
+<line x1="673" y1="357.0" x2="1138" y2="357.0" stroke="#e8edf4"/>
+<text x="664.0" y="362.0" font-size="11" fill="#64748b" font-weight="normal" text-anchor="end">94.5%</text>
+<line x1="673" y1="311.5" x2="1138" y2="311.5" stroke="#e8edf4"/>
+<text x="664.0" y="316.5" font-size="11" fill="#64748b" font-weight="normal" text-anchor="end">95.2%</text>
+<line x1="673" y1="266.0" x2="1138" y2="266.0" stroke="#e8edf4"/>
+<text x="664.0" y="271.0" font-size="11" fill="#64748b" font-weight="normal" text-anchor="end">96.0%</text>
+<line x1="673" y1="220.5" x2="1138" y2="220.5" stroke="#e8edf4"/>
+<text x="664.0" y="225.5" font-size="11" fill="#64748b" font-weight="normal" text-anchor="end">96.8%</text>
+<line x1="673" y1="175.0" x2="1138" y2="175.0" stroke="#e8edf4"/>
+<text x="664.0" y="180.0" font-size="11" fill="#64748b" font-weight="normal" text-anchor="end">97.5%</text>
+<line x1="673.0" y1="357" x2="673.0" y2="319.4" stroke="#0f9f8f" stroke-opacity=".18" stroke-width="3"/>
+<circle cx="673.0" cy="319.4" r="7" fill="#0f9f8f" stroke="#fff" stroke-width="2"/>
+<text x="673.0" y="380.0" font-size="12" fill="#64748b" font-weight="normal" text-anchor="middle">42</text>
+<text x="673.0" y="307.4" font-size="11" fill="#0f9f8f" font-weight="bold" text-anchor="middle">95.12</text>
+<line x1="789.2" y1="357" x2="789.2" y2="215.0" stroke="#0f9f8f" stroke-opacity=".18" stroke-width="3"/>
+<circle cx="789.2" cy="215.0" r="7" fill="#0f9f8f" stroke="#fff" stroke-width="2"/>
+<text x="789.2" y="380.0" font-size="12" fill="#64748b" font-weight="normal" text-anchor="middle">43</text>
+<text x="789.2" y="203.0" font-size="11" fill="#0f9f8f" font-weight="bold" text-anchor="middle">96.84</text>
+<line x1="905.5" y1="357" x2="905.5" y2="269.0" stroke="#0f9f8f" stroke-opacity=".18" stroke-width="3"/>
+<circle cx="905.5" cy="269.0" r="7" fill="#0f9f8f" stroke="#fff" stroke-width="2"/>
+<text x="905.5" y="380.0" font-size="12" fill="#64748b" font-weight="normal" text-anchor="middle">44</text>
+<text x="905.5" y="257.0" font-size="11" fill="#0f9f8f" font-weight="bold" text-anchor="middle">95.95</text>
+<line x1="1021.8" y1="357" x2="1021.8" y2="205.3" stroke="#0f9f8f" stroke-opacity=".18" stroke-width="3"/>
+<circle cx="1021.8" cy="205.3" r="7" fill="#0f9f8f" stroke="#fff" stroke-width="2"/>
+<text x="1021.8" y="380.0" font-size="12" fill="#64748b" font-weight="normal" text-anchor="middle">45</text>
+<text x="1021.8" y="193.3" font-size="11" fill="#0f9f8f" font-weight="bold" text-anchor="middle">97.00</text>
+<line x1="1138.0" y1="357" x2="1138.0" y2="281.2" stroke="#0f9f8f" stroke-opacity=".18" stroke-width="3"/>
+<circle cx="1138.0" cy="281.2" r="7" fill="#0f9f8f" stroke="#fff" stroke-width="2"/>
+<text x="1138.0" y="380.0" font-size="12" fill="#64748b" font-weight="normal" text-anchor="middle">46</text>
+<text x="1138.0" y="269.2" font-size="11" fill="#0f9f8f" font-weight="bold" text-anchor="middle">95.75</text>
+<line x1="673" y1="258.0" x2="1138" y2="258.0" stroke="#475569" stroke-dasharray="5 5"/>
+<text x="1138.0" y="391.0" font-size="12" fill="#475569" font-weight="normal" text-anchor="end">均值 96.13%  ·  标准差 0.78</text>
+<rect x="40" y="435" width="545" height="300" rx="14" fill="#ffffff" stroke="#e2e8f0"/>
+<text x="62.0" y="467.0" font-size="18" fill="#17243a" font-weight="bold" text-anchor="start">各随机种子训练耗时</text>
+<line x1="88" y1="685.0" x2="561" y2="685.0" stroke="#e8edf4"/>
+<text x="80.0" y="689.0" font-size="11" fill="#64748b" font-weight="normal" text-anchor="end">104s</text>
+<line x1="88" y1="624.3" x2="561" y2="624.3" stroke="#e8edf4"/>
+<text x="80.0" y="628.3" font-size="11" fill="#64748b" font-weight="normal" text-anchor="end">115s</text>
+<line x1="88" y1="563.7" x2="561" y2="563.7" stroke="#e8edf4"/>
+<text x="80.0" y="567.7" font-size="11" fill="#64748b" font-weight="normal" text-anchor="end">125s</text>
+<line x1="88" y1="503.0" x2="561" y2="503.0" stroke="#e8edf4"/>
+<text x="80.0" y="507.0" font-size="11" fill="#64748b" font-weight="normal" text-anchor="end">136s</text>
+<rect x="114.3" y="574.2" width="42" height="110.8" rx="5" fill="#e58b27"/>
+<text x="135.3" y="565.2" font-size="11" fill="#e58b27" font-weight="bold" text-anchor="middle">123.5</text>
+<text x="135.3" y="707.0" font-size="12" fill="#64748b" font-weight="normal" text-anchor="middle">42</text>
+<rect x="208.9" y="531.6" width="42" height="153.4" rx="5" fill="#e58b27"/>
+<text x="229.9" y="522.6" font-size="11" fill="#e58b27" font-weight="bold" text-anchor="middle">130.9</text>
+<text x="229.9" y="707.0" font-size="12" fill="#64748b" font-weight="normal" text-anchor="middle">43</text>
+<rect x="303.5" y="618.9" width="42" height="66.1" rx="5" fill="#e58b27"/>
+<text x="324.5" y="609.9" font-size="11" fill="#e58b27" font-weight="bold" text-anchor="middle">115.7</text>
+<text x="324.5" y="707.0" font-size="12" fill="#64748b" font-weight="normal" text-anchor="middle">44</text>
+<rect x="398.1" y="626.6" width="42" height="58.4" rx="5" fill="#e58b27"/>
+<text x="419.1" y="617.6" font-size="11" fill="#e58b27" font-weight="bold" text-anchor="middle">114.3</text>
+<text x="419.1" y="707.0" font-size="12" fill="#64748b" font-weight="normal" text-anchor="middle">45</text>
+<rect x="492.7" y="656.4" width="42" height="28.6" rx="5" fill="#e58b27"/>
+<text x="513.7" y="647.4" font-size="11" fill="#e58b27" font-weight="bold" text-anchor="middle">109.1</text>
+<text x="513.7" y="707.0" font-size="12" fill="#64748b" font-weight="normal" text-anchor="middle">46</text>
+<line x1="88" y1="601.5" x2="561" y2="601.5" stroke="#475569" stroke-dasharray="5 5"/>
+<text x="561.0" y="722.0" font-size="12" fill="#475569" font-weight="normal" text-anchor="end">均值 118.7s</text>
+<rect x="615" y="435" width="545" height="300" rx="14" fill="#ffffff" stroke="#e2e8f0"/>
+<text x="637.0" y="467.0" font-size="18" fill="#17243a" font-weight="bold" text-anchor="start">结果摘要</text>
+<circle cx="644" cy="495" r="5" fill="#2563eb"/>
+<text x="660.0" y="500.0" font-size="13" fill="#64748b" font-weight="normal" text-anchor="start">关系测试准确率</text>
+<text x="660.0" y="518.0" font-size="14" fill="#17243a" font-weight="bold" text-anchor="start">98.943% ± 0.121%（范围 98.800–99.100%）</text>
+<circle cx="644" cy="538" r="5" fill="#0f9f8f"/>
+<text x="660.0" y="543.0" font-size="13" fill="#64748b" font-weight="normal" text-anchor="start">1-shot 数字准确率</text>
+<text x="660.0" y="561.0" font-size="14" fill="#17243a" font-weight="bold" text-anchor="start">96.132% ± 0.784%（范围 95.12–97.00%）</text>
+<circle cx="644" cy="581" r="5" fill="#7c3aed"/>
+<text x="660.0" y="586.0" font-size="13" fill="#64748b" font-weight="normal" text-anchor="start">关系测试损失</text>
+<text x="660.0" y="604.0" font-size="14" fill="#17243a" font-weight="bold" text-anchor="start">0.0358 ± 0.0034</text>
+<circle cx="644" cy="624" r="5" fill="#334155"/>
+<text x="660.0" y="629.0" font-size="13" fill="#64748b" font-weight="normal" text-anchor="start">数字准确率最佳 / 最低</text>
+<text x="660.0" y="647.0" font-size="14" fill="#17243a" font-weight="bold" text-anchor="start">seed 45 (97.0%) / seed 42 (95.12%)</text>
+<circle cx="644" cy="667" r="5" fill="#334155"/>
+<text x="660.0" y="672.0" font-size="13" fill="#64748b" font-weight="normal" text-anchor="start">实验设置</text>
+<text x="660.0" y="690.0" font-size="14" fill="#17243a" font-weight="bold" text-anchor="start">每类 1 张标签图；关系训练 50k pairs；骨干网络冻结</text>
+</g>
+</svg>

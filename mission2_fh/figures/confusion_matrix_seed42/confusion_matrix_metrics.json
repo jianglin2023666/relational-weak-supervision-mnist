@@ -1,0 +1,7 @@
+{
+  "source_csv": "training_results/seed_42/digit_confusion_matrix.csv",
+  "num_samples": 10000,
+  "num_correct": 9942,
+  "accuracy": 0.9942,
+  "accuracy_percent": 99.42
+}

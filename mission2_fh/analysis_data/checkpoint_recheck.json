@@ -1,0 +1,7 @@
+{
+  "checkpoint_reload_confusion_match": true,
+  "test_samples": 10000,
+  "correct": 9942,
+  "errors": 58,
+  "embedding_max_absolute_difference": 0.0
+}

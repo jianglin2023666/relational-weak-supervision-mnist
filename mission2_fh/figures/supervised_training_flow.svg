@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="926.64pt" height="235.44pt" viewBox="0 0 926.64 235.44" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-11-15T14:23:06.078516</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.10.3, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 235.44 
+L 926.64 235.44 
+L 926.64 0 
+L 0 0 
+z
+" style="fill: #ffffff"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 14.217231 126.171529 
+L 200.173846 126.171529 
+Q 205.787631 126.171529 205.787631 120.970588 
+L 205.787631 49.457647 
+Q 205.787631 44.256706 200.173846 44.256706 
+L 14.217231 44.256706 
+Q 8.603446 44.256706 8.603446 49.457647 
+L 8.603446 120.970588 
+Q 8.603446 126.171529 14.217231 126.171529 
+z
+" clip-path="url(#pfaa41ac2e4)" style="fill: #e6eff8; stroke: #2d5f91; stroke-width: 1.5; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_3">
+    <path d="M 238.768615 126.171529 
+L 424.725231 126.171529 
+Q 430.339015 126.171529 430.339015 120.970588 
+L 430.339015 49.457647 
+Q 430.339015 44.256706 424.725231 44.256706 
+L 238.768615 44.256706 
+Q 233.154831 44.256706 233.154831 49.457647 
+L 233.154831 120.970588 
+Q 233.154831 126.171529 238.768615 126.171529 
+z
+" clip-path="url(#pfaa41ac2e4)" style="fill: #e6eff8; stroke: #2d5f91; stroke-width: 1.5; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_4">
+    <path d="M 463.32 126.171529 
+L 649.276615 126.171529 
+Q 654.8904 126.171529 654.8904 120.970588 
+L 654.8904 49.457647 
+Q 654.8904 44.256706 649.276615 44.256706 
+L 463.32 44.256706 
+Q 457.706215 44.256706 457.706215 49.457647 
+L 457.706215 120.970588 
+Q 457.706215 126.171529 463.32 126.171529 
+z
+" clip-path="url(#pfaa41ac2e4)" style="fill: #e6eff8; stroke: #2d5f91; stroke-width: 1.5; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_5">
+    <path d="M 687.871385 126.171529 
+L 873.828 126.171529 
+Q 879.441785 126.171529 879.441785 120.970588 
+L 879.441785 49.457647 
+Q 879.441785 44.256706 873.828 44.256706 
+L 687.871385 44.256706 
+Q 682.2576 44.256706 682.2576 49.457647 
+L 682.2576 120.970588 
+Q 682.2576 126.171529 687.871385 126.171529 
+z
+" clip-path="url(#pfaa41ac2e4)" style="fill: #e6eff8; stroke: #2d5f91; stroke-width: 1.5; stroke-linejoin: miter"/>
+   </g>
+   <g id="text_1">
+    <text style="font-size: 12px; font-family: 'DejaVu Sans'" transform="translate(67.690226 81.80668)">MNIST image</text>
+    <text style="font-size: 12px; font-family: 'DejaVu Sans'" transform="translate(73.588976 95.244055)">[B,1,28,28]</text>
+   </g>
+   <g id="text_2">
+    <text style="font-size: 12px; font-family: 'DejaVu Sans'" transform="translate(276.092236 81.80668)">Shared BaseModel</text>
+    <text style="font-size: 12px; font-family: 'DejaVu Sans'" transform="translate(277.669111 95.244055)">128-D embedding</text>
+   </g>
+   <g id="text_3">
+    <text style="font-size: 12px; font-family: 'DejaVu Sans'" transform="translate(511.974245 81.80668)">Linear(128,10)</text>
+    <text style="font-size: 12px; font-family: 'DejaVu Sans'" transform="translate(530.464558 95.244055)">10 logits</text>
+   </g>
+   <g id="text_4">
+    <text style="font-size: 12px; font-family: 'DejaVu Sans'" transform="translate(751.04563 81.80668)">Prediction</text>
+    <text style="font-size: 12px; font-family: 'DejaVu Sans'" transform="translate(728.990942 95.244055)">argmax: digit 0-9</text>
+   </g>
+   <g id="patch_6">
+    <path d="M 205.684325 85.214118 
+Q 217.015076 85.214118 226.556972 85.214118 
+" style="fill: none; stroke: #000000; stroke-width: 1.6; stroke-linecap: round"/>
+    <path d="M 222.156972 83.014118 
+L 226.556972 85.214118 
+L 222.156972 87.414118 
+" style="fill: none; stroke: #000000; stroke-width: 1.6; stroke-linecap: round"/>
+   </g>
+   <g id="patch_7">
+    <path d="M 430.23571 85.214118 
+Q 441.56646 85.214118 451.108357 85.214118 
+" style="fill: none; stroke: #000000; stroke-width: 1.6; stroke-linecap: round"/>
+    <path d="M 446.708357 83.014118 
+L 451.108357 85.214118 
+L 446.708357 87.414118 
+" style="fill: none; stroke: #000000; stroke-width: 1.6; stroke-linecap: round"/>
+   </g>
+   <g id="patch_8">
+    <path d="M 654.787095 85.214118 
+Q 666.117845 85.214118 675.659741 85.214118 
+" style="fill: none; stroke: #000000; stroke-width: 1.6; stroke-linecap: round"/>
+    <path d="M 671.259741 83.014118 
+L 675.659741 85.214118 
+L 671.259741 87.414118 
+" style="fill: none; stroke: #000000; stroke-width: 1.6; stroke-linecap: round"/>
+   </g>
+   <g id="text_5">
+    <text style="font-size: 12px; font-family: 'DejaVu Sans'; text-anchor: middle" x="555.947446" y="169.729412" transform="rotate(-0 555.947446 169.729412)">Cross-entropy(logits, true label)</text>
+   </g>
+   <g id="patch_9">
+    <path d="M 555.947446 126.224224 
+Q 555.947446 137.224496 555.947446 146.435913 
+" style="fill: none; stroke: #000000; stroke-width: 1.6; stroke-linecap: round"/>
+    <path d="M 558.147446 142.035913 
+L 555.947446 146.435913 
+L 553.747446 142.035913 
+" style="fill: none; stroke: #000000; stroke-width: 1.6; stroke-linecap: round"/>
+   </g>
+   <g id="text_6">
+    <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: middle" x="463.32" y="211.987059" transform="rotate(-0 463.32 211.987059)">Training updates both BaseModel and classifier; evaluation disables dropout.</text>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="pfaa41ac2e4">
+   <rect x="7.2" y="7.2" width="912.24" height="221.04"/>
+  </clipPath>
+ </defs>
+</svg>

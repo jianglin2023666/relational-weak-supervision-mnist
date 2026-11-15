@@ -1,0 +1,16 @@
+{
+  "status": "passed",
+  "training_config": "100 epochs, batch64, seeds42-46",
+  "history_rows": 500,
+  "test_samples_per_seed": 10000,
+  "best_checkpoint_selection": "first maximum validation accuracy",
+  "mean_digit_test_accuracy_percent": 99.292,
+  "sample_std_percentage_points": 0.07726577508832862,
+  "seed42_reloaded_checkpoint_confusion_match": true,
+  "seed42_embedding_max_absolute_difference": 0.0,
+  "test_prediction_rows": 10000,
+  "seed42_errors": 58,
+  "embedding_samples": 2000,
+  "embedding_samples_per_class": 200,
+  "local_document_links_and_python_syntax": "passed"
+}

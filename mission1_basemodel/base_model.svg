@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1180" height="270" viewBox="0 0 1180 270" role="img" aria-labelledby="title desc" font-family="Arial, Microsoft YaHei, sans-serif">
+<title id="title">BaseModel 共享骨干网络</title>
+<desc id="desc">批量 MNIST 图像经过三个卷积块、特征压缩与线性投影，得到每张图像的 128 维 embedding。</desc>
+<rect width="1180" height="270" fill="#fff"/>
+<text x="24" y="47" font-size="26" font-weight="700" fill="#17283f">BaseModel 共享骨干网络</text>
+  <rect x="24" y="82" width="170" height="131" rx="9" fill="#eff6ff" stroke="#b8cce4"/>
+  <text x="36" y="110" font-size="17" font-weight="700" fill="#174776">MNIST 输入</text>
+  <text x="36" y="146" font-size="16" font-weight="700" fill="#17283f">B × 1 × 28 × 28</text>
+  <text x="36" y="175" font-size="12" font-weight="400" fill="#354963">灰度图像</text>
+  <path d="M200 147h10m-4-4 4 4-4 4" fill="none" stroke="#456894" stroke-width="2"/>
+  <rect x="216" y="82" width="170" height="131" rx="9" fill="#eff6ff" stroke="#b8cce4"/>
+  <text x="228" y="110" font-size="17" font-weight="700" fill="#174776">卷积块 1</text>
+  <text x="228" y="146" font-size="16" font-weight="700" fill="#17283f">B × 32 × 14 × 14</text>
+  <text x="228" y="175" font-size="12" font-weight="400" fill="#354963">Conv → ReLU → MaxPool</text>
+  <path d="M392 147h10m-4-4 4 4-4 4" fill="none" stroke="#456894" stroke-width="2"/>
+  <rect x="408" y="82" width="170" height="131" rx="9" fill="#eff6ff" stroke="#b8cce4"/>
+  <text x="420" y="110" font-size="17" font-weight="700" fill="#174776">卷积块 2</text>
+  <text x="420" y="146" font-size="16" font-weight="700" fill="#17283f">B × 64 × 7 × 7</text>
+  <text x="420" y="175" font-size="12" font-weight="400" fill="#354963">Conv → ReLU → MaxPool</text>
+  <path d="M584 147h10m-4-4 4 4-4 4" fill="none" stroke="#456894" stroke-width="2"/>
+  <rect x="600" y="82" width="170" height="131" rx="9" fill="#eff6ff" stroke="#b8cce4"/>
+  <text x="612" y="110" font-size="17" font-weight="700" fill="#174776">卷积块 3</text>
+  <text x="612" y="146" font-size="16" font-weight="700" fill="#17283f">B × 64 × 7 × 7</text>
+  <text x="612" y="175" font-size="12" font-weight="400" fill="#354963">Conv → ReLU</text>
+  <path d="M776 147h10m-4-4 4 4-4 4" fill="none" stroke="#456894" stroke-width="2"/>
+  <rect x="792" y="82" width="170" height="131" rx="9" fill="#eff6ff" stroke="#b8cce4"/>
+  <text x="804" y="110" font-size="17" font-weight="700" fill="#174776">特征压缩</text>
+  <text x="804" y="146" font-size="16" font-weight="700" fill="#17283f">B × 64</text>
+  <text x="804" y="175" font-size="12" font-weight="400" fill="#354963">Flatten → Linear</text>
+<text x="804" y="196" font-size="12" font-weight="400" fill="#354963">→ ReLU → Dropout</text>
+  <path d="M968 147h10m-4-4 4 4-4 4" fill="none" stroke="#456894" stroke-width="2"/>
+  <rect x="984" y="82" width="170" height="131" rx="9" fill="#dbeafe" stroke="#b8cce4"/>
+  <text x="996" y="110" font-size="17" font-weight="700" fill="#174776">线性投影</text>
+  <text x="996" y="146" font-size="16" font-weight="700" fill="#17283f">B × 128</text>
+  <text x="996" y="175" font-size="12" font-weight="400" fill="#354963">Linear → embedding</text>
+<text x="24" y="245" font-size="15" font-weight="400" fill="#354963">卷积 3 × 3，步幅 1，填充 1　｜　最大池化 2 × 2，步幅 2　｜　Dropout p = 0.2　｜　B 为批量大小</text>
+</svg>

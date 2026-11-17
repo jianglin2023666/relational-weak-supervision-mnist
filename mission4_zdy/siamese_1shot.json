@@ -1,0 +1,15 @@
+{
+  "experiment_name": "siamese_50k_1shot",
+  "train_size": "50k",
+  "relation_epochs": 5,
+  "few_shot_epochs": 100,
+  "seeds": [42, 43, 44, 45, 46],
+  "shots_per_class": 1,
+  "relation_batch_size": 128,
+  "few_shot_batch_size": 32,
+  "relation_learning_rate": 0.001,
+  "few_shot_learning_rate": 0.01,
+  "weight_decay": 0.0001,
+  "num_workers": 0,
+  "deterministic": true
+}

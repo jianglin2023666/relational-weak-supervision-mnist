@@ -1,0 +1,2 @@
+model,relation_train_size,shots_per_class,seeds,relation_test_accuracy_mean,relation_test_accuracy_std,digit_test_accuracy_mean,digit_test_accuracy_std,seed42_spearman_rho,seed42_discovered_order
+Siamese,50k,1,"42;43;44;45;46",98.943,0.1214,96.132,0.7839,0.8814,"0;1;2;3;4;5;8;9;6;7"

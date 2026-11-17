@@ -1,0 +1,45 @@
+{
+  "num_runs": 5,
+  "metadata": {
+    "device": "cpu",
+    "torch_version": "2.7.0+cpu",
+    "cuda_version": null,
+    "gpu_name": null,
+    "config_path": "/home/zhoudy/relational-weak-supervision-mnist/configs/siamese.json",
+    "relation_checkpoint_selection": "relation_validation_accuracy",
+    "classifier_checkpoint_selection": "fixed_final_epoch",
+    "backbone_frozen_during_few_shot": true
+  },
+  "metrics": {
+    "best_val_relation_accuracy": {
+      "mean": 99.0,
+      "std": 0.025739075352470317,
+      "min": 98.97,
+      "max": 99.025
+    },
+    "relation_test_loss": {
+      "mean": 0.03584821142882109,
+      "std": 0.0033520637683961876,
+      "min": 0.03118786075040698,
+      "max": 0.04022234302163124
+    },
+    "relation_test_accuracy": {
+      "mean": 98.943,
+      "std": 0.12142899159591194,
+      "min": 98.8,
+      "max": 99.1
+    },
+    "digit_test_accuracy": {
+      "mean": 96.132,
+      "std": 0.7838813685756274,
+      "min": 95.12,
+      "max": 97.0
+    },
+    "training_time_seconds": {
+      "mean": 118.71171011460005,
+      "std": 8.543398111345947,
+      "min": 109.13321730200005,
+      "max": 130.9232510039999
+    }
+  }
+}

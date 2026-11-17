@@ -1,0 +1,6 @@
+﻿seed,best_epoch,shots_per_class,classification_weight,best_val_relation_accuracy,relation_test_loss,relation_test_accuracy,digit_test_accuracy,training_time_seconds,checkpoint_path
+42,4,1,0.5,99.435,0.017622752219170798,99.535,99.24,599.1584792,training_results/joint_relational/mission5_joint_500k_1shot_lambda0.5_20261112_214446/seed_42/best_joint_relational_model.pth
+43,3,1,0.5,99.48,0.01728604991969187,99.495,99.18,538.9411255,training_results/joint_relational/mission5_joint_500k_1shot_lambda0.5_20261112_214446/seed_43/best_joint_relational_model.pth
+44,3,1,0.5,99.375,0.026053414983674885,99.3,99.04,269.87771399999997,training_results/joint_relational/mission5_joint_500k_1shot_lambda0.5_20261112_214446/seed_44/best_joint_relational_model.pth
+45,2,1,0.5,99.37,0.017247553505050018,99.45,99.12,268.46078809999995,training_results/joint_relational/mission5_joint_500k_1shot_lambda0.5_20261112_214446/seed_45/best_joint_relational_model.pth
+46,3,1,0.5,99.415,0.02014666108414531,99.475,99.1,271.0843273999999,training_results/joint_relational/mission5_joint_500k_1shot_lambda0.5_20261112_214446/seed_46/best_joint_relational_model.pth

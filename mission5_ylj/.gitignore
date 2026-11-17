@@ -1,0 +1,18 @@
+# Downloaded peer data remain local. Their immutable commits are recorded separately.
+comparison_inputs/task2/
+comparison_inputs/task3/
+comparison_inputs/task4/
+__pycache__/
+.build/
+~$*
+# Large extracted embedding arrays are reproducible from the trained models.
+*.npz
+figures/model_architecture/paper_reference_page4.png
+# Earlier presentation drafts stay on disk but are not part of the PR.
+ppt/mission5_report_v2.pptx
+ppt/mission5_report_available_data.pdf
+ppt/讲稿.md
+ppt/slide_1_preview.png
+ppt/slide_2_preview.png
+figures/model_architecture/joint_supervision_architecture.png
+figures/model_architecture/joint_supervision_architecture.svg

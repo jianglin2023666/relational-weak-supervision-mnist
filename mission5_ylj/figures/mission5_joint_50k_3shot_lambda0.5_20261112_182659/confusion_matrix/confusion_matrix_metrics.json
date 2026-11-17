@@ -1,0 +1,7 @@
+{
+  "source_csv": "C:/Users/12738/Desktop/postgraduate/deep-learn/homework/relational-weak-supervision-mnist/training_results/joint_relational/mission5_joint_50k_3shot_lambda0.5_20261112_182659/seed_42/digit_confusion_matrix.csv",
+  "num_samples": 10000,
+  "num_correct": 9811,
+  "accuracy": 0.9811,
+  "accuracy_percent": 98.11
+}

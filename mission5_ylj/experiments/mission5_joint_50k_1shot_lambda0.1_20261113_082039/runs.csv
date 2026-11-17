@@ -1,0 +1,6 @@
+﻿seed,best_epoch,shots_per_class,classification_weight,best_val_relation_accuracy,relation_test_loss,relation_test_accuracy,digit_test_accuracy,training_time_seconds,checkpoint_path
+42,5,1,0.1,98.985,0.027771988154947757,99.085,98.23,94.7963136999997,training_results/joint_relational/mission5_joint_50k_1shot_lambda0.1_20261113_082039/seed_42/best_joint_relational_model.pth
+43,4,1,0.1,99.09,0.026325285467505455,99.045,98.26,87.68604610000011,training_results/joint_relational/mission5_joint_50k_1shot_lambda0.1_20261113_082039/seed_43/best_joint_relational_model.pth
+44,5,1,0.1,99.055,0.03240918629914522,98.865,98.03,92.03615309999986,training_results/joint_relational/mission5_joint_50k_1shot_lambda0.1_20261113_082039/seed_44/best_joint_relational_model.pth
+45,4,1,0.1,98.925,0.03458774301707745,98.735,97.99,94.98700660000031,training_results/joint_relational/mission5_joint_50k_1shot_lambda0.1_20261113_082039/seed_45/best_joint_relational_model.pth
+46,5,1,0.1,99.05,0.026358095820248128,99.125,98.41,91.85347640000009,training_results/joint_relational/mission5_joint_50k_1shot_lambda0.1_20261113_082039/seed_46/best_joint_relational_model.pth

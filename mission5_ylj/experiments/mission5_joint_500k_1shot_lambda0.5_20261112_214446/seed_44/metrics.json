@@ -1,0 +1,36 @@
+{
+  "seed": 44,
+  "best_epoch": 3,
+  "best_val_relation_accuracy": 99.375,
+  "relation_test_loss": 0.026053414983674885,
+  "relation_test_accuracy": 99.3,
+  "digit_test_accuracy": 99.04,
+  "digit_per_class_accuracy": {
+    "0": 99.79591836734694,
+    "1": 99.55947136563877,
+    "2": 99.70930232558139,
+    "3": 99.3069306930693,
+    "4": 98.57433808553971,
+    "5": 98.54260089686099,
+    "6": 99.06054279749478,
+    "7": 99.0272373540856,
+    "8": 98.25462012320328,
+    "9": 98.41427155599604
+  },
+  "training_time_seconds": 269.87771399999997,
+  "checkpoint_path": "training_results/joint_relational/mission5_joint_500k_1shot_lambda0.5_20261112_214446/seed_44/best_joint_relational_model.pth",
+  "shots_per_class": 1,
+  "classification_weight": 0.5,
+  "selected_indices": [
+    14775,
+    36145,
+    48332,
+    3938,
+    45325,
+    46554,
+    13010,
+    340,
+    47548,
+    26860
+  ]
+}

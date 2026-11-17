@@ -1,0 +1,8 @@
+{
+  "device": "cuda",
+  "torch_version": "2.11.0+cu128",
+  "cuda_version": "12.8",
+  "gpu_name": "NVIDIA GeForce RTX 4070 Laptop GPU",
+  "config_path": "C:\\Users\\12738\\Desktop\\postgraduate\\deep-learn\\homework\\relational-weak-supervision-mnist\\mission5_ylj\\configs\\joint_500k_1shot_lambda0.5.json",
+  "checkpoint_selection": "relation_validation_accuracy"
+}

@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800">
+<rect width="1200" height="800" fill="white"/>
+<g font-family="Microsoft YaHei, Noto Sans CJK SC, Arial, sans-serif" fill="#344C7B">
+<text x="30" y="48" font-size="30" font-weight="bold">四种监督方案的数字分类结果</text>
+<text x="30" y="84" font-size="19">种子42–46的均值 ± 样本标准差；前三行不适用1-shot / 3-shot</text>
+<rect x="30" y="110" width="1140" height="51" fill="#DBEAFE" stroke="#CBD1D7"/>
+<text x="44" y="142" font-size="22" text-anchor="start" font-weight="bold">模型</text>
+<text x="400.0" y="142" font-size="22" text-anchor="middle" font-weight="bold">关系图片对</text>
+<text x="647.5" y="142" font-size="22" text-anchor="middle" font-weight="bold">绝对数字标签</text>
+<text x="990.0" y="142" font-size="22" text-anchor="middle" font-weight="bold">数字测试准确率（%）</text>
+<rect x="30" y="161" width="1140" height="51" fill="white" stroke="#CBD1D7"/>
+<text x="44" y="193" font-size="22" text-anchor="start" font-weight="normal">全监督（100轮）</text>
+<text x="400.0" y="193" font-size="22" text-anchor="middle" font-weight="normal">不使用</text>
+<text x="647.5" y="193" font-size="22" text-anchor="middle" font-weight="normal">全部50,000张</text>
+<text x="990.0" y="193" font-size="22" text-anchor="middle" font-weight="normal">99.292 ± 0.077</text>
+<rect x="30" y="212" width="1140" height="51" fill="white" stroke="#CBD1D7"/>
+<text x="44" y="244" font-size="22" text-anchor="start" font-weight="normal">基础弱监督</text>
+<text x="400.0" y="244" font-size="22" text-anchor="middle" font-weight="normal">50k</text>
+<text x="647.5" y="244" font-size="22" text-anchor="middle" font-weight="normal">无绝对数字标签</text>
+<text x="990.0" y="244" font-size="22" text-anchor="middle" font-weight="normal">64.034 ± 31.912</text>
+<rect x="30" y="263" width="1140" height="51" fill="white" stroke="#CBD1D7"/>
+<text x="44" y="295" font-size="22" text-anchor="start" font-weight="normal">基础弱监督</text>
+<text x="400.0" y="295" font-size="22" text-anchor="middle" font-weight="normal">500k</text>
+<text x="647.5" y="295" font-size="22" text-anchor="middle" font-weight="normal">无绝对数字标签</text>
+<text x="990.0" y="295" font-size="22" text-anchor="middle" font-weight="normal">53.166 ± 26.121</text>
+<rect x="30" y="314" width="1140" height="51" fill="white" stroke="#CBD1D7"/>
+<text x="44" y="346" font-size="22" text-anchor="start" font-weight="normal">Siamese</text>
+<text x="400.0" y="346" font-size="22" text-anchor="middle" font-weight="normal">50k</text>
+<text x="647.5" y="346" font-size="22" text-anchor="middle" font-weight="normal">1-shot（共10张）</text>
+<text x="990.0" y="346" font-size="22" text-anchor="middle" font-weight="normal">96.132 ± 0.784</text>
+<rect x="30" y="365" width="1140" height="51" fill="white" stroke="#CBD1D7"/>
+<text x="44" y="397" font-size="22" text-anchor="start" font-weight="normal">Siamese</text>
+<text x="400.0" y="397" font-size="22" text-anchor="middle" font-weight="normal">50k</text>
+<text x="647.5" y="397" font-size="22" text-anchor="middle" font-weight="normal">3-shot（共30张）</text>
+<text x="990.0" y="397" font-size="22" text-anchor="middle" font-weight="normal">96.920 ± 0.131</text>
+<rect x="30" y="416" width="1140" height="51" fill="white" stroke="#CBD1D7"/>
+<text x="44" y="448" font-size="22" text-anchor="start" font-weight="normal">联合监督（λ=0.5）</text>
+<text x="400.0" y="448" font-size="22" text-anchor="middle" font-weight="normal">50k</text>
+<text x="647.5" y="448" font-size="22" text-anchor="middle" font-weight="normal">1-shot（共10张）</text>
+<text x="990.0" y="448" font-size="22" text-anchor="middle" font-weight="normal">98.162 ± 0.186</text>
+<rect x="30" y="467" width="1140" height="51" fill="white" stroke="#CBD1D7"/>
+<text x="44" y="499" font-size="22" text-anchor="start" font-weight="normal">联合监督（λ=0.5）</text>
+<text x="400.0" y="499" font-size="22" text-anchor="middle" font-weight="normal">50k</text>
+<text x="647.5" y="499" font-size="22" text-anchor="middle" font-weight="normal">3-shot（共30张）</text>
+<text x="990.0" y="499" font-size="22" text-anchor="middle" font-weight="normal">98.094 ± 0.141</text>
+<rect x="30" y="518" width="1140" height="51" fill="white" stroke="#CBD1D7"/>
+<text x="44" y="550" font-size="22" text-anchor="start" font-weight="normal">联合监督（λ=0.5）</text>
+<text x="400.0" y="550" font-size="22" text-anchor="middle" font-weight="normal">500k</text>
+<text x="647.5" y="550" font-size="22" text-anchor="middle" font-weight="normal">1-shot（共10张）</text>
+<text x="990.0" y="550" font-size="22" text-anchor="middle" font-weight="normal">99.136 ± 0.077</text>
+<rect x="30" y="569" width="1140" height="51" fill="white" stroke="#CBD1D7"/>
+<text x="44" y="601" font-size="22" text-anchor="start" font-weight="normal">联合监督（λ=0.5）</text>
+<text x="400.0" y="601" font-size="22" text-anchor="middle" font-weight="normal">500k</text>
+<text x="647.5" y="601" font-size="22" text-anchor="middle" font-weight="normal">3-shot（共30张）</text>
+<text x="990.0" y="601" font-size="22" text-anchor="middle" font-weight="normal">99.092 ± 0.140</text>
+<line x1="315" y1="110" x2="315" y2="620" stroke="#CBD1D7"/>
+<line x1="485" y1="110" x2="485" y2="620" stroke="#CBD1D7"/>
+<line x1="810" y1="110" x2="810" y2="620" stroke="#CBD1D7"/>
+<text x="30" y="714" font-size="18">1-shot / 3-shot 指每类1张 / 3张，共10张 / 30张绝对标签图片。</text>
+<text x="30" y="744" font-size="18">基础弱监督仍使用大小关系标签。“无绝对数字标签”不代表无监督。</text>
+<text x="30" y="774" font-size="18">训练预算不同：全监督100轮；弱/联合5轮；Siamese预训练5轮、分类头100轮。</text>
+</g></svg>

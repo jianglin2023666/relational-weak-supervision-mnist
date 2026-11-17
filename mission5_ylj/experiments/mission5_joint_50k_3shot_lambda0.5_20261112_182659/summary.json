@@ -1,0 +1,43 @@
+{
+  "num_runs": 5,
+  "metadata": {
+    "device": "cuda",
+    "torch_version": "2.11.0+cu128",
+    "cuda_version": "12.8",
+    "gpu_name": "NVIDIA GeForce RTX 4070 Laptop GPU",
+    "config_path": "C:\\Users\\12738\\Desktop\\postgraduate\\deep-learn\\homework\\relational-weak-supervision-mnist\\mission5_ylj\\configs\\joint_50k_3shot_lambda0.5.json",
+    "checkpoint_selection": "relation_validation_accuracy"
+  },
+  "metrics": {
+    "best_val_relation_accuracy": {
+      "mean": 98.93499999999999,
+      "std": 0.03221024681681275,
+      "min": 98.88,
+      "max": 98.96
+    },
+    "relation_test_loss": {
+      "mean": 0.03160221454560756,
+      "std": 0.0031420871182271117,
+      "min": 0.0284318229816854,
+      "max": 0.03683010817021132
+    },
+    "relation_test_accuracy": {
+      "mean": 98.9,
+      "std": 0.10037429949942475,
+      "min": 98.725,
+      "max": 98.975
+    },
+    "digit_test_accuracy": {
+      "mean": 98.094,
+      "std": 0.14117365193264586,
+      "min": 97.86,
+      "max": 98.21
+    },
+    "training_time_seconds": {
+      "mean": 45.33109298000018,
+      "std": 16.819202281971577,
+      "min": 26.962952300000325,
+      "max": 63.81397339999967
+    }
+  }
+}

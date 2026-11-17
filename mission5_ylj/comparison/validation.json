@@ -1,0 +1,156 @@
+{
+  "experiments": [
+    {
+      "model": "Supervised",
+      "size": "none",
+      "shots": "all",
+      "lambda": "",
+      "five_seeds": true,
+      "summary_recomputed": true,
+      "five_confusion_matrices_match": true
+    },
+    {
+      "model": "Weakly supervised",
+      "size": "50k",
+      "shots": 0,
+      "lambda": "",
+      "five_seeds": true,
+      "summary_recomputed": true,
+      "five_confusion_matrices_match": true
+    },
+    {
+      "model": "Weakly supervised",
+      "size": "500k",
+      "shots": 0,
+      "lambda": "",
+      "five_seeds": true,
+      "summary_recomputed": true,
+      "five_confusion_matrices_match": true
+    },
+    {
+      "model": "Siamese",
+      "size": "50k",
+      "shots": 1,
+      "lambda": "",
+      "five_seeds": true,
+      "summary_recomputed": true,
+      "five_confusion_matrices_match": true
+    },
+    {
+      "model": "Siamese",
+      "size": "50k",
+      "shots": 3,
+      "lambda": "",
+      "five_seeds": true,
+      "summary_recomputed": true,
+      "five_confusion_matrices_match": true
+    },
+    {
+      "model": "Joint",
+      "size": "500k",
+      "shots": 1,
+      "lambda": 0.5,
+      "five_seeds": true,
+      "summary_recomputed": true,
+      "five_confusion_matrices_match": true
+    },
+    {
+      "model": "Joint",
+      "size": "500k",
+      "shots": 3,
+      "lambda": 0.5,
+      "five_seeds": true,
+      "summary_recomputed": true,
+      "five_confusion_matrices_match": true
+    },
+    {
+      "model": "Joint",
+      "size": "50k",
+      "shots": 1,
+      "lambda": 0.1,
+      "five_seeds": true,
+      "summary_recomputed": true,
+      "five_confusion_matrices_match": true
+    },
+    {
+      "model": "Joint",
+      "size": "50k",
+      "shots": 1,
+      "lambda": 0.5,
+      "five_seeds": true,
+      "summary_recomputed": true,
+      "five_confusion_matrices_match": true
+    },
+    {
+      "model": "Joint",
+      "size": "50k",
+      "shots": 1,
+      "lambda": 1.0,
+      "five_seeds": true,
+      "summary_recomputed": true,
+      "five_confusion_matrices_match": true
+    },
+    {
+      "model": "Joint",
+      "size": "50k",
+      "shots": 3,
+      "lambda": 0.5,
+      "five_seeds": true,
+      "summary_recomputed": true,
+      "five_confusion_matrices_match": true
+    }
+  ],
+  "few_shot_selection": [
+    {
+      "shot": 1,
+      "seed": 42,
+      "identical_indices": true
+    },
+    {
+      "shot": 1,
+      "seed": 43,
+      "identical_indices": true
+    },
+    {
+      "shot": 1,
+      "seed": 44,
+      "identical_indices": true
+    },
+    {
+      "shot": 1,
+      "seed": 45,
+      "identical_indices": true
+    },
+    {
+      "shot": 1,
+      "seed": 46,
+      "identical_indices": true
+    },
+    {
+      "shot": 3,
+      "seed": 42,
+      "identical_indices": true
+    },
+    {
+      "shot": 3,
+      "seed": 43,
+      "identical_indices": true
+    },
+    {
+      "shot": 3,
+      "seed": 44,
+      "identical_indices": true
+    },
+    {
+      "shot": 3,
+      "seed": 45,
+      "identical_indices": true
+    },
+    {
+      "shot": 3,
+      "seed": 46,
+      "identical_indices": true
+    }
+  ],
+  "embedding_sample_indices_identical": true
+}

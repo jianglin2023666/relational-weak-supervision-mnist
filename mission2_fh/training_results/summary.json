@@ -1,0 +1,38 @@
+{
+  "num_runs": 5,
+  "metadata": {
+    "device": "cpu",
+    "torch_version": "2.7.0+cpu",
+    "cuda_version": null,
+    "gpu_name": null,
+    "config_path": "configs/supervised_paper100.json",
+    "checkpoint_selection": "digit_validation_accuracy",
+    "supervision": "full_digit_labels"
+  },
+  "metrics": {
+    "best_val_digit_accuracy": {
+      "mean": 99.344,
+      "std": 0.03435112807463719,
+      "min": 99.31,
+      "max": 99.4
+    },
+    "digit_test_loss": {
+      "mean": 0.028087087606179693,
+      "std": 0.003244202383043564,
+      "min": 0.02314132603182321,
+      "max": 0.03203308139297949
+    },
+    "digit_test_accuracy": {
+      "mean": 99.292,
+      "std": 0.07726577508832862,
+      "min": 99.22,
+      "max": 99.42
+    },
+    "training_time_seconds": {
+      "mean": 1740.7556868999993,
+      "std": 315.30807353381766,
+      "min": 1590.7885371000011,
+      "max": 2304.7034203000003
+    }
+  }
+}

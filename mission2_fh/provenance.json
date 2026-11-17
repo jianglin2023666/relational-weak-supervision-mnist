@@ -1,0 +1,29 @@
+{
+  "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+  "torch": "2.7.0+cpu",
+  "threads": 4,
+  "experiment": "supervised_paper100_bs64_20261113_201811",
+  "commit": "16dcacf7d0b71797870d765607b9489cecc8e8b7",
+  "config": {
+    "experiment_name": "supervised_paper100_bs64",
+    "epochs": 100,
+    "seeds": [
+      42,
+      43,
+      44,
+      45,
+      46
+    ],
+    "batch_size": 64,
+    "learning_rate": 0.001,
+    "weight_decay": 0.0001,
+    "num_workers": 0,
+    "deterministic": true
+  },
+  "embedding_seed": 42,
+  "embedding_samples_per_class": 200,
+  "analysis_prepared_on": "2026-11-15",
+  "training_started_at": "2026-11-13T20:17:54+08:00",
+  "training_finished_at": "2026-11-13T22:43:27+08:00",
+  "presentation_seed_policy": "seed42 fixed before viewing test results"
+}

@@ -1,0 +1,16 @@
+{
+  "experiment_name": "supervised_paper100_bs64",
+  "epochs": 100,
+  "seeds": [
+    42,
+    43,
+    44,
+    45,
+    46
+  ],
+  "batch_size": 64,
+  "learning_rate": 0.001,
+  "weight_decay": 0.0001,
+  "num_workers": 0,
+  "deterministic": true
+}

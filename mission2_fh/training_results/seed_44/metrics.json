@@ -1,0 +1,21 @@
+{
+  "seed": 44,
+  "best_epoch": 54,
+  "best_val_digit_accuracy": 99.35,
+  "digit_test_loss": 0.03203308139297949,
+  "digit_test_accuracy": 99.25,
+  "digit_per_class_accuracy": {
+    "0": 99.89795918367346,
+    "1": 99.55947136563877,
+    "2": 99.8062015503876,
+    "3": 99.4059405940594,
+    "4": 98.77800407331975,
+    "5": 99.32735426008969,
+    "6": 99.16492693110648,
+    "7": 98.15175097276264,
+    "8": 99.38398357289527,
+    "9": 99.00891972249752
+  },
+  "training_time_seconds": 1599.9338408999974,
+  "checkpoint_path": "training_results/seed_44/best_supervised_model.pth"
+}

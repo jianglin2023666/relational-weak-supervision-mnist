@@ -1,0 +1,22 @@
+{
+  "seed": 44,
+  "best_epoch": 4,
+  "best_val_relation_accuracy": 98.245,
+  "relation_test_loss": 0.044617776665091514,
+  "relation_test_accuracy": 97.95,
+  "digit_test_accuracy": 42.04,
+  "digit_per_class_accuracy": {
+    "0": 99.6938775510204,
+    "1": 98.59030837004406,
+    "2": 97.57751937984496,
+    "3": 1.7821782178217822,
+    "4": 0.0,
+    "5": 0.0,
+    "6": 0.7306889352818372,
+    "7": 0.0,
+    "8": 8.829568788501026,
+    "9": 98.1169474727453
+  },
+  "training_time_seconds": 14.968306900002062,
+  "checkpoint_path": "training_results/weakly_supervised/weakly_supervised_50k_20261112_185104/seed_44/best_weakly_supervised_model.pth"
+}

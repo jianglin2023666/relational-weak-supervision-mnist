@@ -1,0 +1,72 @@
+{
+  "50k": {
+    "per_seed": [
+      {
+        "seed": 42,
+        "relation": 99.175,
+        "digit": 98.45
+      },
+      {
+        "seed": 43,
+        "relation": 98.935,
+        "digit": 98.26
+      },
+      {
+        "seed": 44,
+        "relation": 97.95,
+        "digit": 42.04
+      },
+      {
+        "seed": 45,
+        "relation": 97.855,
+        "digit": 49.25
+      },
+      {
+        "seed": 46,
+        "relation": 98.06,
+        "digit": 32.17
+      }
+    ],
+    "relation_mean": 98.39500000000001,
+    "relation_std": 0.6127499490004038,
+    "digit_mean": 64.034,
+    "digit_std": 31.911977845316954,
+    "digit_min": 32.17,
+    "digit_max": 98.45
+  },
+  "500k": {
+    "per_seed": [
+      {
+        "seed": 42,
+        "relation": 99.365,
+        "digit": 99.07
+      },
+      {
+        "seed": 43,
+        "relation": 98.36,
+        "digit": 41.62
+      },
+      {
+        "seed": 44,
+        "relation": 98.245,
+        "digit": 48.75
+      },
+      {
+        "seed": 45,
+        "relation": 98.325,
+        "digit": 34.95
+      },
+      {
+        "seed": 46,
+        "relation": 98.305,
+        "digit": 41.44
+      }
+    ],
+    "relation_mean": 98.52000000000001,
+    "relation_std": 0.4742098691507762,
+    "digit_mean": 53.166,
+    "digit_std": 26.121399847634503,
+    "digit_min": 34.95,
+    "digit_max": 99.07
+  }
+}

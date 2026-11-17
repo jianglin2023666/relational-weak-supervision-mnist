@@ -1,0 +1,42 @@
+{
+  "num_runs": 5,
+  "metadata": {
+    "device": "cuda",
+    "torch_version": "2.7.0+cu128",
+    "cuda_version": "12.8",
+    "gpu_name": "NVIDIA GeForce RTX 4070 SUPER",
+    "config_path": "C:\\Users\\Lithos\\Desktop\\Homework\\deeplearning\\repo\\configs\\weakly_supervised_500k.json"
+  },
+  "metrics": {
+    "best_val_relation_accuracy": {
+      "mean": 98.59299999999999,
+      "std": 0.5054033043026103,
+      "min": 98.305,
+      "max": 99.49
+    },
+    "relation_test_loss": {
+      "mean": 0.0333171885485854,
+      "std": 0.0077595708837633675,
+      "min": 0.01981737598865293,
+      "max": 0.03967022488750517
+    },
+    "relation_test_accuracy": {
+      "mean": 98.52000000000001,
+      "std": 0.4742098691507762,
+      "min": 98.245,
+      "max": 99.365
+    },
+    "digit_test_accuracy": {
+      "mean": 53.166,
+      "std": 26.121399847634503,
+      "min": 34.95,
+      "max": 99.07
+    },
+    "training_time_seconds": {
+      "mean": 120.38261039999779,
+      "std": 3.4051335001079583,
+      "min": 115.45874640002148,
+      "max": 123.66859010001644
+    }
+  }
+}

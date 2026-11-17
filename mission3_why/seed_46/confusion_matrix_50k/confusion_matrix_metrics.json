@@ -1,0 +1,7 @@
+{
+  "source_csv": "C:/Users/Lithos/Desktop/Homework/deeplearning/repo/training_results/weakly_supervised/weakly_supervised_50k_20261112_185104/seed_46/digit_confusion_matrix.csv",
+  "num_samples": 10000,
+  "num_correct": 3217,
+  "accuracy": 0.3217,
+  "accuracy_percent": 32.17
+}

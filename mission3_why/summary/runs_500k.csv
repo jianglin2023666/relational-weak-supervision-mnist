@@ -1,0 +1,6 @@
+﻿seed,best_epoch,best_val_relation_accuracy,relation_test_loss,relation_test_accuracy,digit_test_accuracy,training_time_seconds,checkpoint_path
+42,5,99.49,0.01981737598865293,99.365,99.07,119.68903750000754,training_results/weakly_supervised/weakly_supervised_500k_20261112_185229/seed_42/best_weakly_supervised_model.pth
+43,5,98.465,0.03641457662899047,98.36,41.62,119.53107009996893,training_results/weakly_supervised/weakly_supervised_500k_20261112_185229/seed_43/best_weakly_supervised_model.pth
+44,3,98.305,0.03581366977766156,98.245,48.75,115.45874640002148,training_results/weakly_supervised/weakly_supervised_500k_20261112_185229/seed_44/best_weakly_supervised_model.pth
+45,2,98.32,0.034870095460116865,98.325,34.95,123.56560789997457,training_results/weakly_supervised/weakly_supervised_500k_20261112_185229/seed_45/best_weakly_supervised_model.pth
+46,3,98.385,0.03967022488750517,98.305,41.44,123.66859010001644,training_results/weakly_supervised/weakly_supervised_500k_20261112_185229/seed_46/best_weakly_supervised_model.pth

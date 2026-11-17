@@ -1,0 +1,7 @@
+{
+  "device": "cuda",
+  "torch_version": "2.7.0+cu128",
+  "cuda_version": "12.8",
+  "gpu_name": "NVIDIA GeForce RTX 4070 SUPER",
+  "config_path": "C:\\Users\\Lithos\\Desktop\\Homework\\deeplearning\\repo\\configs\\weakly_supervised.json"
+}
